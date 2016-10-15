@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Show blog</title>
+</head>
+<body>
+	<h1 class="title">Show</h1>
+
+	<a href="javascript::history.back(-1)">back</a>
+
+	{% if post %}
+		<h3 class="title">{{post.title}}</h3>
+		<p>{{post.content}}</p>
+	{%else%}
+		<p>Not found</p>
+	{%endif%}
+
+</body>
+</html>
